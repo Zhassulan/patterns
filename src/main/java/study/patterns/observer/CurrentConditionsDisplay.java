@@ -1,19 +1,20 @@
 package study.patterns.observer;
 
 import study.patterns.observer.interfaces.IDisplayElement;
-import study.patterns.observer.interfaces.IObserver;
-import study.patterns.observer.interfaces.ISubject;
 
-public class CurrentConditionsDisplay implements IObserver, IDisplayElement {
+import java.util.Observable;
+import java.util.Observer;
 
+public class CurrentConditionsDisplay implements Observer, IDisplayElement {
+
+    Observable observable;
     private float temperature;
     private float humidity;
     private float pressure;
-    private ISubject weatherData;
 
-    public CurrentConditionsDisplay(ISubject weatherData) {
-        this.weatherData = weatherData;
-        weatherData.registerObserver(this);
+    public CurrentConditionsDisplay(Observable observable) {
+        this.observable = observable;
+        observable.addObserver(this);
     }
 
     @Override
@@ -22,10 +23,14 @@ public class CurrentConditionsDisplay implements IObserver, IDisplayElement {
     }
 
     @Override
-    public void update(float temperature, float humidity, float pressure) {
-        this.temperature = temperature;
-        this.humidity = humidity;
-        this.pressure = pressure;
-        display();
+    public void update(Observable obs, Object arg) {
+        if (obs instanceof WeatherData) {
+            WeatherData weatherData = (WeatherData) obs;
+            this.temperature = weatherData.getTemperature();
+            this.humidity = weatherData.getHumidity();
+            this.pressure = weatherData.getPressure();
+            display();
+        }
     }
+
 }
