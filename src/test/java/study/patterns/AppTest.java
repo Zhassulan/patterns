@@ -1,4 +1,4 @@
-package study;
+package study.patterns;
 
 import static org.junit.Assert.assertTrue;
 

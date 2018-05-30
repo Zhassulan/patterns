@@ -1,4 +1,4 @@
-package study;
+package study.patterns;
 
 /**
  * Hello world!
