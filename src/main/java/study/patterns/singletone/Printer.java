@@ -1,13 +1,13 @@
-package study.patterns.singletone.singletone;
+package study.patterns.singletone;
 
 public class Printer {
 
     private static volatile Printer instance;
 
-    public Printer() {
+    private Printer() {
     }
 
-    public static synchronized Printer getInstance() {
+    public static Printer getInstance() {
         if (instance == null) synchronized (Printer.class) {
             instance = new Printer();
         }

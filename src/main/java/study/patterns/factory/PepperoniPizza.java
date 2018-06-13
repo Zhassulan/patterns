@@ -1,4 +1,4 @@
 package study.patterns.factory;
 
-public class PepperoniPizza {
+public class PepperoniPizza extends Pizza {
 }
