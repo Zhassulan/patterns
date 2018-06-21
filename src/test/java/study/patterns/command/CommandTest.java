@@ -1,7 +1,7 @@
 package study.patterns.command;
 
 import org.junit.Test;
-import study.patterns.command.interfaces.Command;
+import study.patterns.command.interfaces.ICommand;
 
 public class CommandTest {
 
@@ -49,8 +49,8 @@ public class CommandTest {
         remoteControl.offButtonWasPushed(1);
         remoteControl.undoButtonWasPushed();
 
-        Command[] partyOn = {livingRoomLightOn, stereoOnWithCD};
-        Command[] partyOff = {livingRoomLightOff, stereoOff};
+        ICommand[] partyOn = {livingRoomLightOn, stereoOnWithCD};
+        ICommand[] partyOff = {livingRoomLightOff, stereoOff};
         MacroCommand partyOnMacro = new MacroCommand(partyOn);
         MacroCommand partyOffMacro = new MacroCommand(partyOff);
 

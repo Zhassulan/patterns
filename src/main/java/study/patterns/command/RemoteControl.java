@@ -1,18 +1,18 @@
 package study.patterns.command;
 
-import study.patterns.command.interfaces.Command;
+import study.patterns.command.interfaces.ICommand;
 
 public class RemoteControl {
 
-    Command [] onCommands;
-    Command [] offCommands;
-    Command undoCommand;
+    ICommand[] onCommands;
+    ICommand[] offCommands;
+    ICommand undoCommand;
 
     public RemoteControl() {
-        onCommands = new Command[7];
-        offCommands = new Command[7];
+        onCommands = new ICommand[7];
+        offCommands = new ICommand[7];
 
-        Command noCommand = new NoCommand();
+        ICommand noCommand = new NoCommand();
         for (int i = 0; i < 7; i++) {
             onCommands[i] = noCommand;
             offCommands[i] = noCommand;
@@ -20,7 +20,7 @@ public class RemoteControl {
         undoCommand = noCommand;
     }
 
-    public void setCommand(int slot, Command onCommand, Command offCommand) {
+    public void setCommand(int slot, ICommand onCommand, ICommand offCommand) {
         onCommands[slot] = onCommand;
         offCommands[slot] = offCommand;
     }

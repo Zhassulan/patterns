@@ -1,6 +1,6 @@
 package study.patterns.command.interfaces;
 
-public interface Command {
+public interface ICommand {
 
     public void execute();
     public void undo();

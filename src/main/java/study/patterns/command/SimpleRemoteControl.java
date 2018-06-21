@@ -1,15 +1,15 @@
 package study.patterns.command;
 
-import study.patterns.command.interfaces.Command;
+import study.patterns.command.interfaces.ICommand;
 
 public class SimpleRemoteControl {
 
-    Command slot;
+    ICommand slot;
 
     public SimpleRemoteControl() {
     }
 
-    public void setCommand(Command command) {
+    public void setCommand(ICommand command) {
         slot = command;
     }
 

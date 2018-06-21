@@ -1,12 +1,12 @@
 package study.patterns.command;
 
-import study.patterns.command.interfaces.Command;
+import study.patterns.command.interfaces.ICommand;
 
-public class MacroCommand implements Command {
+public class MacroCommand implements ICommand {
 
-    Command [] commands;
+    ICommand[] commands;
 
-    public MacroCommand(Command[] commands) {
+    public MacroCommand(ICommand[] commands) {
         this.commands = commands;
     }
 

@@ -1,8 +1,8 @@
 package study.patterns.command;
 
-import study.patterns.command.interfaces.Command;
+import study.patterns.command.interfaces.ICommand;
 
-public class LightOffCommand implements Command {
+public class LightOffCommand implements ICommand {
 
     Light light;
 
