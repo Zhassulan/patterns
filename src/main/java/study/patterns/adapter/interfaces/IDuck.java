@@ -1,8 +1,8 @@
 package study.patterns.adapter.interfaces;
 
-public interface Turkey {
+public interface IDuck {
 
-    public void gobble();
+    public void quack();
     public void fly();
 
 }

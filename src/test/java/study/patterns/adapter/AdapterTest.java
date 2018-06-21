@@ -1,7 +1,7 @@
 package study.patterns.adapter;
 
 import org.junit.Test;
-import study.patterns.adapter.interfaces.Duck;
+import study.patterns.adapter.interfaces.IDuck;
 
 public class AdapterTest {
 
@@ -9,7 +9,7 @@ public class AdapterTest {
     public void adapterTest()   {
         MallardDuck duck = new MallardDuck();
         WildTurkey turkey = new WildTurkey();
-        Duck turkeyAdapter = new TurkeyAdapter(turkey);
+        IDuck turkeyAdapter = new TurkeyAdapter(turkey);
 
         System.out.println("The turkey says..");
         turkey.gobble();
@@ -22,7 +22,7 @@ public class AdapterTest {
         testDuck(turkeyAdapter);
     }
 
-    static void testDuck(Duck duck) {
+    static void testDuck(IDuck duck) {
         duck.quack();
         duck.fly();
     }

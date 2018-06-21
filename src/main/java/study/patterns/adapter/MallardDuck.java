@@ -1,8 +1,8 @@
 package study.patterns.adapter;
 
-import study.patterns.adapter.interfaces.Duck;
+import study.patterns.adapter.interfaces.IDuck;
 
-public class MallardDuck implements Duck {
+public class MallardDuck implements IDuck {
 
     @Override
     public void quack() {

@@ -1,8 +1,8 @@
 package study.patterns.adapter.interfaces;
 
-public interface Duck {
+public interface ITurkey {
 
-    public void quack();
+    public void gobble();
     public void fly();
 
 }

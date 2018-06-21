@@ -1,13 +1,13 @@
 package study.patterns.adapter;
 
-import study.patterns.adapter.interfaces.Duck;
-import study.patterns.adapter.interfaces.Turkey;
+import study.patterns.adapter.interfaces.IDuck;
+import study.patterns.adapter.interfaces.ITurkey;
 
-public class TurkeyAdapter implements Duck {
+public class TurkeyAdapter implements IDuck {
 
-    Turkey turkey;
+    ITurkey turkey;
 
-    public TurkeyAdapter(Turkey turkey) {
+    public TurkeyAdapter(ITurkey turkey) {
         this.turkey = turkey;
     }
 

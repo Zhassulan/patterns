@@ -1,8 +1,8 @@
 package study.patterns.adapter;
 
-import study.patterns.adapter.interfaces.Turkey;
+import study.patterns.adapter.interfaces.ITurkey;
 
-public class WildTurkey implements Turkey {
+public class WildTurkey implements ITurkey {
 
     @Override
     public void gobble() {
