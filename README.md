@@ -9,3 +9,7 @@
 5. Factory - Фабрика
 6. Command - Команда
 7. Facade - Фасад
+8. Template - Шаблонный метод
+9. Iterator, Composite - Итератор, Компоновщик (Collections)
+11. 
+
