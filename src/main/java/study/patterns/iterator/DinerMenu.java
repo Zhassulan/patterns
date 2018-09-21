@@ -1,7 +1,6 @@
-package study.patterns.collections;
+package study.patterns.iterator;
 
-import study.patterns.collections.interfaces.IIterator;
-import study.patterns.collections.interfaces.Menu;
+import study.patterns.iterator.interfaces.Menu;
 
 import java.util.Iterator;
 

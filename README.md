@@ -1,6 +1,6 @@
-# patterns
+# Design patterns study (Erik Freeman's book)
  
- Design patterns - Шаблоны поректирования:
+ Design patterns - Шаблоны проектирования:
 
 1. Singletone - Одиночка
 2. Behavior - Стратегия
@@ -10,6 +10,7 @@
 6. Command - Команда
 7. Facade - Фасад
 8. Template - Шаблонный метод
-9. Iterator, Composite - Итератор, Компоновщик (Collections)
-11. 
+9. Iterator,  - Итератор
+11. Composite - Компоновщик
+12. 
 

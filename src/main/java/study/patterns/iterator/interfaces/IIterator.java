@@ -1,4 +1,4 @@
-package study.patterns.collections.interfaces;
+package study.patterns.iterator.interfaces;
 
 public interface IIterator {
 

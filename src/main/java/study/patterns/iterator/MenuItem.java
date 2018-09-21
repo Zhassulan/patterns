@@ -1,4 +1,4 @@
-package study.patterns.collections;
+package study.patterns.iterator;
 
 public class MenuItem {
 

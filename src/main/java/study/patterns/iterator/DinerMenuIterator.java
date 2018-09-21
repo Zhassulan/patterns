@@ -1,6 +1,5 @@
-package study.patterns.collections;
+package study.patterns.iterator;
 
-import study.patterns.collections.interfaces.IIterator;
 import java.util.Iterator;
 
 public class DinerMenuIterator implements Iterator {
