@@ -1,9 +1,6 @@
-package study.patterns.collections;
+package study.patterns.iterator;
 
 import org.junit.Test;
-import study.patterns.iterator.DinerMenu;
-import study.patterns.iterator.PancakeHouseMenu;
-import study.patterns.iterator.Waitress;
 
 public class CollectionsTest {
 
