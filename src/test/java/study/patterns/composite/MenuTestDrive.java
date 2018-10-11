@@ -23,6 +23,8 @@ public class MenuTestDrive {
         dessertMenu.add(new MenuItem("Apple pie", "Apple pie with a flakey crust, topped with vanilla icecream", true, 1.59));
 
         Waitress waitress = new Waitress(allMenus);
-        waitress.printMenu();
+        //waitress.printMenu();
+        waitress.printVegetarianMenu();
     }
+
 }
